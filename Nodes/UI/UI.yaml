@@ -117,3 +117,13 @@ Children:
       DataType: LocalizedText
       ModellingRule: Optional
       Value: {"LocaleId":"en-US","Text":"Label1"}
+  - Name: Label3
+    Id: g=a88ca4fda3e780ef10ece7ccb1baa4b6
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=e65518fd7eb84847366635bcb103a606
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Label1"}
