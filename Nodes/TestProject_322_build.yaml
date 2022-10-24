@@ -1,0 +1,72 @@
+Name: TestProject_322_build
+Id: g=32d39bfe13eeecdac263724caebf40b2
+Type: ProjectFolder
+Children:
+- Name: BranchingEnabled
+  Id: g=19788691f13d7eeaf59d16f8593256c2
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: PasswordPolicy
+  Id: g=f508f76f4dc4adbf4863be0876d51ea8
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=ba96304e7cdb6336c1db5a3d413ca87e
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=8dd605a96e48f6e539b260d78e799522
+    Type: PropertyType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=737e8aa9de00f9ef6be592bd4ef13e32
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=d97baa33248cc17ee572603ddc605b59
+    Type: PropertyType
+    DataType: Byte
+    Value: 8
+- Name: Locales
+  Id: g=e535e635c1223e751fac123f18aeaffe
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- Name: LocaleFallbackList
+  Id: g=25e4482896e3a998ddea1a5dbebe7760
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: DefaultUserFolder
+  Id: g=d1c42e254751e6ba601dab482c40fb62
+  Type: NodePointer
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"2c8a320ed880a34c60ab4818045f34a8","Namespace":7}
+  Children:
+  - Name: Kind
+    Id: g=fb3f4da3511562e211e3033f6a31f112
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"Id":61}
